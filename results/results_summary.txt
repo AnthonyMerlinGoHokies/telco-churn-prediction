@@ -1,0 +1,38 @@
+
+TELCO CUSTOMER CHURN PREDICTION - RESULTS SUMMARY
+=================================================
+
+Dataset Information:
+- Total customers: 7043
+- Features used: 33
+- Training samples: 5634
+- Test samples: 1409
+
+Churn Distribution:
+- Retained customers: 5174 (73.46%)
+- Churned customers: 1869 (26.54%)
+
+Model Performance:
+
+Logistic Regression:
+  - Accuracy: 0.8091
+  - ROC AUC: 0.8526
+
+Random Forest:
+  - Accuracy: 0.7899
+  - ROC AUC: 0.8363
+
+Best Model: Logistic Regression
+- ROC AUC Score: 0.8526
+- Accuracy: 0.8091
+
+Business Impact:
+- Customer retention cost: ~$50 per customer
+- Cost of losing a customer: ~$1,800
+- Potential annual savings: $129,000+ through targeted retention
+
+Key Insights:
+1. Contract type is the strongest predictor of churn
+2. Month-to-month customers have 42% churn vs 3% for two-year contracts
+3. New customers (0-10 months tenure) show highest churn risk
+4. Fiber optic internet customers churn more than DSL users
