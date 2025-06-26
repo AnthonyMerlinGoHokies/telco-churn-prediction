@@ -1,27 +1,27 @@
-# 📈 Telco Customer Churn Prediction
+# Telco Customer Churn Prediction
 
 > **Machine learning project predicting telecom customer churn with 80.9% accuracy using PostgreSQL and Python**
 
-## 🎯 Project Overview
+## Project Overview
 
 This project predicts which customers are likely to cancel their telecom services, enabling targeted retention strategies. Using a combination of PostgreSQL for data management and Python for machine learning, the model achieves **80.9% accuracy** and **85.3% AUC**, providing actionable insights for business decision-making.
 
-### 🏆 Key Results
+### Key Results
 - **Dataset:** 7,043 customer records from Kaggle Telco Customer Churn dataset
 - **Churn Rate:** 26.54% of customers churned
 - **Best Model:** Logistic Regression (80.9% accuracy, 85.3% AUC)
 - **Business Impact:** $129,000 potential annual savings through targeted retention
 
-## 🔍 Key Business Insights
+## Key Business Insights
 
 | Finding | Impact |
 |---------|--------|
-| 📋 **Contract Type is #1 predictor** | Month-to-month: 42% churn vs Two-year: 3% churn |
-| ⏰ **Tenure matters** | New customers (0-10 months) show highest churn risk |
-| 🌐 **Internet Service type** | Fiber optic customers churn more than DSL users |
-| 💰 **Monthly Charges** | Higher-paying customers are more likely to churn |
+| **Contract Type is #1 predictor** | Month-to-month: 42% churn vs Two-year: 3% churn |
+| **Tenure matters** | New customers (0-10 months) show highest churn risk |
+| **Internet Service type** | Fiber optic customers churn more than DSL users |
+| **Monthly Charges** | Higher-paying customers are more likely to churn |
 
-## 🛠 Technology Stack
+## Technology Stack
 
 - **Database:** PostgreSQL 15
 - **Languages:** Python 3.11, SQL  
@@ -29,7 +29,7 @@ This project predicts which customers are likely to cancel their telecom service
 - **Visualization:** matplotlib, seaborn
 - **Environment:** Anaconda
 
-## 📊 Model Performance
+## Model Performance
 
 ### Logistic Regression (Best Model)
 ```
@@ -44,7 +44,7 @@ Recall:       53% (churn detection)
 - **Retention Cost:** ~$50 per customer  
 - **ROI:** 2,600% on targeted retention campaigns
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.11+ with Anaconda
@@ -86,41 +86,14 @@ python src/load_data.py
 python src/ml_analysis.py
 ```
 
-## 📁 Project Structure
+## Business Applications
 
-```
-telco-churn-prediction/
-├── 📄 README.md                          # Project overview
-├── 📄 requirements.txt                   # Python dependencies
-├── 📁 data/                             # Dataset files
-│   └── WA_Fn-UseC_-Telco-Customer-Churn.csv
-├── 📁 sql/                              # Database setup
-│   └── create_database.sql
-├── 📁 src/                              # Source code
-│   ├── load_data.py                     # Data loading pipeline
-│   └── ml_analysis.py                   # ML analysis pipeline
-├── 📁 results/                          # Generated outputs
-│   ├── eda_analysis.png                 # Exploratory data visualizations
-│   ├── model_performance.png            # Model comparison charts
-│   └── results_summary.txt              # Complete analysis summary
-└── 📁 docs/                             # Additional documentation
-```
+1. **Risk Scoring:** Rank customers by churn probability
+2. **Targeted Campaigns:** Focus retention efforts on high-risk customers  
+3. **Product Strategy:** Promote long-term contracts to reduce churn
+4. **Customer Success:** Proactive support for new customers
 
-## 📈 Visualizations
-
-The project automatically generates comprehensive visualizations:
-
-
-*Charts show churn patterns, contract analysis, model comparisons, and feature importance rankings*
-
-## 💼 Business Applications
-
-1. **🎯 Risk Scoring:** Rank customers by churn probability
-2. **📞 Targeted Campaigns:** Focus retention efforts on high-risk customers  
-3. **📋 Product Strategy:** Promote long-term contracts to reduce churn
-4. **🤝 Customer Success:** Proactive support for new customers
-
-## 🔬 Methodology
+## Methodology
 
 1. **Data Engineering:** PostgreSQL database with proper indexing
 2. **Feature Engineering:** Created `charges_per_tenure`, `is_new_customer` features
@@ -128,14 +101,14 @@ The project automatically generates comprehensive visualizations:
 4. **Evaluation:** Used accuracy, ROC AUC, precision, and recall metrics
 5. **Business Validation:** Calculated ROI and cost-benefit analysis
 
-## 📊 Dataset Information
+## Dataset Information
 
 - **Source:** [Kaggle Telco Customer Churn Dataset](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 - **Size:** 7,043 customers with 21 features
 - **Target:** Binary classification (Churn: Yes/No)
 - **Features:** Demographics, services, contract details, charges
 
-## 🔄 Workflow
+## Workflow
 
 ```mermaid
 graph LR
@@ -147,7 +120,7 @@ graph LR
     F --> G[Business Insights]
 ```
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 - [ ] Deploy model as REST API using Flask
 - [ ] Create interactive dashboard with Streamlit
@@ -155,7 +128,7 @@ graph LR
 - [ ] Implement real-time scoring pipeline
 - [ ] A/B testing framework for retention strategies
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create feature branch (`git checkout -b feature/improvement`)
@@ -163,17 +136,17 @@ graph LR
 4. Push to branch (`git push origin feature/improvement`)
 5. Create Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Dataset provided by IBM Watson Analytics
 - Kaggle for hosting the dataset
 - PostgreSQL and scikit-learn communities
 
-## 📧 Contact
+## Contact
 
 **Anthony Merlin**
 - GitHub: [@AnthonyMerlinGoHokies](https://github.com/AnthonyMerlinGoHokies)
@@ -181,4 +154,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-⭐ **Star this repository if you found it helpful!**
+**Star this repository if you found it helpful!**
