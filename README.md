@@ -108,17 +108,7 @@ python src/ml_analysis.py
 - **Target:** Binary classification (Churn: Yes/No)
 - **Features:** Demographics, services, contract details, charges
 
-## Workflow
 
-```mermaid
-graph LR
-    A[Raw CSV Data] --> B[PostgreSQL Database]
-    B --> C[Data Preprocessing]
-    C --> D[Feature Engineering]
-    D --> E[Model Training]
-    E --> F[Model Evaluation]
-    F --> G[Business Insights]
-```
 
 ## Future Enhancements
 
